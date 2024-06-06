@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="navbar">
+                <div class="text-navbar">
+                    <h1>Merkat</h1>
+                </div>
+                <div class="menu-navbar">
+                    <ul>
+                        <li id="Financias"><a href="#">Financias</a></li>
+                        <li id="Produtos"><a href="#">Produtos</a></li>
+                    </ul>
+                </div>
+                <div class="logo-navbar">
+                    <h1>
+                        <>Virtucodex
+                    </h1>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <h1 id="Usuario"></h1>
+            </header>
+
+            <div class="statistics">
+                <div class="text">
+                    <h1>Produtos</h1>
+                </div>
+
+                <div class="menu-card">
+                       <div id="dashboard-produtos"></div>
+                </div>
+            </div>
+        </main>
+        <div class="edition-container" id="painel-adicao" style="display: none;">
+            <div class="card-edition">
+                <div class="img-add">
+                    <input type="file" id="imagem-produto" accept="image/*">
+                    <img id="preview-imagem" src="#" alt="Preview da Imagem" style="display: none;">
+                </div>
+                <div class="forms-container">
+                    <form id="form-produto">
+                        <label for="produto">Nome do produto:</label>
+                        <input type="text" id="nome-produto">
+        
+                        <label for="preco">Preço:</label>
+                        <input type="number" id="preco-produto">
+        
+                        <label for="descricao">Descrição Interna:</label>
+                        <input type="text" id="descricao-produto">
+        
+                        <button type="button" id="adicionar-produto">Adicionar Produto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="dashboard-produtos"></div> -->
+
+
+    <script src="./dash.js"></script>
+    <script src="./data.js"></script>
+    <script src="../login.js"></script>
+    <script src="../../js/dados.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
